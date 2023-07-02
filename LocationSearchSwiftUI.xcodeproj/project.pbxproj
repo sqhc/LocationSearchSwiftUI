@@ -11,6 +11,11 @@
 		06315A682A51A58400870B9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A672A51A58400870B9D /* ContentView.swift */; };
 		06315A6A2A51A59A00870B9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06315A692A51A59A00870B9D /* Assets.xcassets */; };
 		06315A6D2A51A59A00870B9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06315A6C2A51A59A00870B9D /* Preview Assets.xcassets */; };
+		06315A752A51A61800870B9D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A742A51A61800870B9D /* LocationManager.swift */; };
+		06315A782A51B0E500870B9D /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A772A51B0E500870B9D /* MKCoordinateRegion+Extensions.swift */; };
+		06315A7C2A51D41400870B9D /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A7B2A51D41400870B9D /* LocalSearchService.swift */; };
+		06315A7F2A51E4C900870B9D /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A7E2A51E4C900870B9D /* Landmark.swift */; };
+		06315A822A51FA2800870B9D /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06315A812A51FA2800870B9D /* LandmarkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		06315A672A51A58400870B9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06315A692A51A59A00870B9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06315A6C2A51A59A00870B9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06315A742A51A61800870B9D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		06315A772A51B0E500870B9D /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
+		06315A7B2A51D41400870B9D /* LocalSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
+		06315A7E2A51E4C900870B9D /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		06315A812A51FA2800870B9D /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,11 @@
 		06315A642A51A58300870B9D /* LocationSearchSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				06315A802A51F9CC00870B9D /* Views */,
+				06315A7D2A51E4B300870B9D /* Models */,
+				06315A7A2A51D3F600870B9D /* Services */,
+				06315A762A51B0C300870B9D /* Extensions */,
+				06315A732A51A5F700870B9D /* Managers */,
 				06315A652A51A58400870B9D /* LocationSearchSwiftUIApp.swift */,
 				06315A672A51A58400870B9D /* ContentView.swift */,
 				06315A692A51A59A00870B9D /* Assets.xcassets */,
@@ -65,6 +80,46 @@
 				06315A6C2A51A59A00870B9D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06315A732A51A5F700870B9D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				06315A742A51A61800870B9D /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		06315A762A51B0C300870B9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06315A772A51B0E500870B9D /* MKCoordinateRegion+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		06315A7A2A51D3F600870B9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				06315A7B2A51D41400870B9D /* LocalSearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		06315A7D2A51E4B300870B9D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06315A7E2A51E4C900870B9D /* Landmark.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06315A802A51F9CC00870B9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06315A812A51FA2800870B9D /* LandmarkListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06315A682A51A58400870B9D /* ContentView.swift in Sources */,
+				06315A782A51B0E500870B9D /* MKCoordinateRegion+Extensions.swift in Sources */,
+				06315A7C2A51D41400870B9D /* LocalSearchService.swift in Sources */,
 				06315A662A51A58400870B9D /* LocationSearchSwiftUIApp.swift in Sources */,
+				06315A752A51A61800870B9D /* LocationManager.swift in Sources */,
+				06315A822A51FA2800870B9D /* LandmarkListView.swift in Sources */,
+				06315A7F2A51E4C900870B9D /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +332,8 @@
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your location when in use.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app requires your location when in use.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +363,8 @@
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "The app requires your location when in use.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app requires your location when in use.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
